@@ -1,6 +1,6 @@
 
-// Crear lista de contactos con datos predifinidos
-// Cada contacto contiene el nombre y apellido en un solo string
+// Crear lista de contactos con datos predifinidos //
+// Cada contacto contiene el nombre y apellido en un solo string // 
 
 let misContactos = [
     {nombreApellido: "Maria Alejandra Amaya Rodriguez"},
@@ -15,12 +15,6 @@ console.log(misContactos);
 
 /// Función para añadir un nuevo contacto ///
 
-// const anadirContacto = function(misContactos, nombreApellido){
-//     misContactos.push({nombreApellido});
-// }
-
-// anadirContacto(misContactos, "Lucas Antonio Arroyave");
-
 function anadirContacto(misContactos, nombreApellido){
     misContactos.push({nombreApellido});
 }
@@ -29,7 +23,7 @@ anadirContacto(misContactos, "Lucas Antonio Arroyave");
 
 console.log(misContactos);
 
-/// Funcion para borra un contacto de la lista ///
+/// Funcion para borrar un contacto de la lista ///
 
 const eliminarContacto = function(misContactos, nombreApellido){
     for (let i = 0; misContactos.length; i++){
@@ -44,7 +38,7 @@ eliminarContacto(misContactos, "Leticia Rodriguez"); // Voy a eliminar el contac
 
 console.log(misContactos);
 
-/// Crea una función para imprimir en consola los contactos presentes en la lista ///
+/// Crear una función para imprimir en consola los contactos presentes en la lista ///
 
 function verContactos(){
     console.log(misContactos);
