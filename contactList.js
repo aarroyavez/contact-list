@@ -1,5 +1,6 @@
 
-// Crear lista de contactos con datos predifinidos
+// Crear lista de contactos con datos predifinidos//
+
 // Cada contacto contiene el nombre y apellido en un solo string
 
 let misContactos = [
@@ -11,7 +12,7 @@ let misContactos = [
     {nombreApellido: "Leticia Rodriguez"}
 ];
 
-console.log(misContactos); 
+console.log(misContactos); //imprime la lista de contatos llamada misContactos
 
 /// Función para añadir un nuevo contacto ///
 
@@ -48,9 +49,12 @@ verContactos();
 
 // Lista de Contactos -2
 
-// Ajusta las funciones de crear y eliminar un contacto para que puedan almacenar la siguiente información como objetos:
+// Ajusta las funciones de crear y eliminar un contacto para que puedan almacenar la siguiente información como objetos
 
-let misContactos = [
+// Agregar Contacto Función
+
+// Declaro una variable tipo objeto //
+let myContactList = [
     {
         id: 1000380949,
         nombres: "Maria Alejandra",
@@ -93,9 +97,37 @@ let misContactos = [
     },
 ];
 
-// Agregar Contacto Función
+// Creo una función que permita añadir un contacto almacenando información como objeto //
 
-function anadirContacto(misContactos, nuevoContacto){
-    let nuevo
+function anadirContactoDos(id, nombres, apellidos, telefono, direccion, ciudad){
+    const newContact = {
+        id: id,
+        nombres: nombres,
+        apellidos: apellidos,
+        telefono: telefono,
+        direccion: direccion,
+        ciudad: ciudad,
+    };
+    myContactList.push(newContact);
+    console.log("Se agregó un nuevo contacto a la lista: ", newContact);
 }
 
+console.log(myContactList);
+
+
+anadirContactoDos(1000201, "Pepito", "Perez", "3201545858", "calle 23 # 34-24", "Palmira");
+
+// Borrar un contacto Función
+
+// let eliminarContactoDos = function(misContactosDos, nombreApellido){
+//     for (let i=0; i<misContactosDos.length; i++){
+//         if (misContactosDos[i].nombres + " " + misContactosDos[i].apellidos === nombreApellido){
+//             misContactosDos.splice(i, 1);
+//             return;
+//         }
+//     }
+
+//     console.log("No fue posible encontrar el contacto " + nombreApellido);
+// }
+
+// eliminarContactoDos(misContactos, "Vanessa Mejia");
