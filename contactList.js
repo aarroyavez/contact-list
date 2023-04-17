@@ -50,7 +50,7 @@ verContactos();
 
 // Ajusta las funciones de crear y eliminar un contacto para que puedan almacenar la siguiente información como objetos:
 
-let misContactos = [
+const misContactosDos = [
     {
         id: 1000380949,
         nombres: "Maria Alejandra",
@@ -95,7 +95,21 @@ let misContactos = [
 
 // Agregar Contacto Función
 
-function anadirContacto(misContactos, nuevoContacto){
-    let nuevo
+function anadirContactoDos(misContactosDos, nuevoContacto){
+    const nuevoID = misContactosDos.length + 1;
+    nuevoContacto.id = nuevoID;
+    misContactosDos.push(nuevoContacto);
 }
 
+anadirContactoDos(misContactosDos, {
+    id: 15245,
+    nombres: "Lucas Antonio",
+    apellidos: "Arroyave Zapata",
+    direccion: "Calle 23a # 37-17",
+    telefono: "125358",
+    ciudad: "Palmira"
+});
+
+
+misContactosDos;
+console.log(misContactosDos);
