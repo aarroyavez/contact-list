@@ -96,7 +96,7 @@ const misContactosDos = [
 // Agregar Contacto Función
 
 function anadirContactoDos(misContactosDos, nuevoContacto){
-    const nuevoID = misContactosDos.length + 1;
+    let nuevoID = misContactosDos.length + 1;
     nuevoContacto.id = nuevoID;
     misContactosDos.push(nuevoContacto);
 }
@@ -113,3 +113,18 @@ anadirContactoDos(misContactosDos, {
 
 misContactosDos;
 console.log(misContactosDos);
+
+// Borrar un contacto Función
+
+let eliminarContactoDos = function(misContactosDos, nombreApellido){
+    for (let i=0; i<misContactosDos.length; i++){
+        if (misContactosDos[i].nombres + " " + misContactosDos[i].apellidos === nombreApellido){
+            misContactosDos.splice(i, 1);
+            return;
+        }
+    }
+
+    console.log("No fue posible encontrar el contacto " + nombreApellido);
+}
+
+eliminarContactoDos(misContactos, "Vanessa Mejia");
