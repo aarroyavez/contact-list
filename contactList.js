@@ -24,7 +24,7 @@ anadirContacto(misContactos, "Lucas Antonio Arroyave");
 
 console.log(misContactos);
 
-/// Funcion para borra un contacto de la lista ///
+/// Funcion para borrar un contacto de la lista ///
 
 function eliminarContacto(misContactos, nombreApellido){
     for (let i = 0; misContactos.length; i++){
