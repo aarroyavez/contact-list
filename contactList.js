@@ -49,7 +49,8 @@ verContactos();
 
 // Agregar Contacto Función
 
-// Declaro una variable tipo objeto //
+// Declaro una nueva variable (lista de contactos con más propiedades) tipo objeto //
+
 let myContactList = [
     {
         id: 1000380949,
@@ -114,7 +115,7 @@ console.log(myContactList); // Imprime la list de contactos con el contacto Pepi
 
 
 
-// Borrar un contacto Función
+// Función que borre un contacto recibiendo el id //
 
 let eliminarContactoDos = function(id){
     for (let i=0; i < myContactList.length; i++){
@@ -127,7 +128,7 @@ let eliminarContactoDos = function(id){
 console.log("No fue posible encontrar el contacto con el 'id'");
 }
 
-eliminarContactoDos(31645854); // llamando la función, se elimina el contacto Luz Dary Zapata Valencia
-console.log(myContactList); // Imprime el array de lista de contactos sin el contacto Luz Dary Valencia 
+eliminarContactoDos(31645854); // llamando la función, se elimina el contacto Luz Dary Zapata Valencia, propietaria del id 31645854
 
+eliminarContactoDos(54622); // Si trato de buscar un id que no está en mi lista, imprime que no fue posible encontrarlo
 
