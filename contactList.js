@@ -12,8 +12,6 @@ let misContactos = [
     {nombreApellido: "Leticia Rodriguez"}
 ];
 
-console.log(misContactos); //imprime la lista de contatos llamada misContactos
-
 /// Función para añadir un nuevo contacto ///
 
 function anadirContacto(misContactos, nombreApellido){
@@ -22,7 +20,6 @@ function anadirContacto(misContactos, nombreApellido){
 
 anadirContacto(misContactos, "Lucas Antonio Arroyave");
 
-console.log(misContactos);
 
 /// Funcion para borrar un contacto de la lista ///
 
@@ -37,7 +34,6 @@ function eliminarContacto(misContactos, nombreApellido){
 
 eliminarContacto(misContactos, "Leticia Rodriguez"); // Voy a eliminar el contacto Leticia Rodriguez de mi lista
 
-console.log(misContactos);
 
 /// Crea una función para imprimir en consola los contactos presentes en la lista ///
 
