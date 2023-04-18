@@ -112,22 +112,26 @@ function anadirContactoDos(id, nombres, apellidos, telefono, direccion, ciudad){
     console.log("Se agregó un nuevo contacto a la lista: ", newContact);
 }
 
-console.log(myContactList);
+anadirContactoDos(1000201, "Pepito", "Perez", "3201545858", "calle 23 # 34-24", "Palmira"); // Llamar la función y agregar las propiedades del contacto a añadir
+console.log(myContactList); // Imprime la list de contactos con el contacto Pepito Perez añadido
 
 
-anadirContactoDos(1000201, "Pepito", "Perez", "3201545858", "calle 23 # 34-24", "Palmira");
+
 
 // Borrar un contacto Función
 
-// let eliminarContactoDos = function(misContactosDos, nombreApellido){
-//     for (let i=0; i<misContactosDos.length; i++){
-//         if (misContactosDos[i].nombres + " " + misContactosDos[i].apellidos === nombreApellido){
-//             misContactosDos.splice(i, 1);
-//             return;
-//         }
-//     }
+let eliminarContactoDos = function(id){
+    for (let i=0; i < myContactList.length; i++){
+        if (myContactList[i].id === id){
+        const contactoBorrado = myContactList.splice(i, 1)[0];
+        console.log("Se borró el contacto", contactoBorrado);
+        return;
+    }
+}
+console.log("No fue posible encontrar el contacto con el 'id'");
+}
 
-//     console.log("No fue posible encontrar el contacto " + nombreApellido);
-// }
+eliminarContactoDos(31645854); // llamando la función, se elimina el contacto Luz Dary Zapata Valencia
+console.log(myContactList); // Imprime el array de lista de contactos sin el contacto Luz Dary Valencia 
 
-// eliminarContactoDos(misContactos, "Vanessa Mejia");
+
