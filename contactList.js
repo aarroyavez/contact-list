@@ -36,7 +36,7 @@ const eliminarContacto = function(misContactos, nombreApellido){
 
 eliminarContacto(misContactos, "Leticia Rodriguez"); // Voy a eliminar el contacto Leticia Rodriguez de mi lista
 
-console.log(misContactos);
+console.log(misContactos); // Imprime la lista de contactos con el contacto Leticia Rodriguez
 
 /// Crear una función para imprimir en consola los contactos presentes en la lista ///
 
@@ -45,3 +45,8 @@ function verContactos(){
 }
 verContactos();
 
+
+
+
+/// Las funciones actualizan que tratan la lista de contactos como un objeto están en la rama project-2, la cual, 
+/// equivale a la segunda parte de la práctica lista de contactos o contact list-2
