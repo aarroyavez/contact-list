@@ -32,8 +32,8 @@ const crearContacto = (parentNode, contacto, dataBase) => {
     ciudadContacto.innerHTML = contacto.ciudad
     iconoDelete.innerHTML = "delete"
 
-    divContacto.classList.add("tarea")
-    iconoDelete.classList.add("material-symbols", "icono")
+    divContacto.classList.add("contacts")
+    iconoDelete.classList.add("material-icons", "icono")
 
     iconoDelete.onclick = () =>{
         dataBase.removeItem(contacto.id)

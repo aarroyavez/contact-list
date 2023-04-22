@@ -63,7 +63,7 @@ body{
     flex-direction: column;
 }
 
-.contact{
+.contacts{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
