@@ -1,0 +1,76 @@
+*::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(53, 51, 51);
+    color: rgb(241, 212, 233);
+}
+
+.container{
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    
+}
+
+.container h2{
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.datos{
+    /* display: block; */
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos input{
+    margin: 1rem 0rem;
+    line-height: 2rem;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: whitesmoke;
+}
+
+.datos input:active{
+    border-bottom: 2px solid rgb(11, 130, 2);
+}
+.datos input:focus{
+    border-bottom: 2px solid rgb(11, 130, 2);
+}
+
+.datos button{
+    margin: 2rem 0rem;
+    background-color: rgb(67, 219, 133);
+    border: 0;
+    height: 3rem;
+    color: black;
+    border-radius: 8px;
+}
+
+.lista_de_contactos{
+    flex-direction: column;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 2.5rem;
+}
+
+.icono{
+    color: red;
+    cursor: pointer;
+}
