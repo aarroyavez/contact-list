@@ -13,7 +13,7 @@ const dataBase = window.localStorage
 boton_agregar.onclick = () => {
     let contacto = {
         // id: id.value,
-        id: Math.random(1, 11),
+        id: id.value,
         nombres: nombres.value,
         apellidos: apellidos.value,
         direccion: direccion.value,
